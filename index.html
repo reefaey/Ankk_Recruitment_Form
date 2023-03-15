@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="join Ankh">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/style_form.css">
+        <link rel="shortcut icon" href="imgs/logo.png" />
+        <title>Ankh Recruitment Form</title>
+        <!-- <script defer src="./script.js"></script> attribute defer let browser to load document (html) first and then script the same thing when you put your script at the bottom of the page -->
+    </head>
+    <body>
+        <iframe name="confirm" title="confirm" id="confirm" onload="if(submitted){
+            window.location='submitted.html';}"></iframe>"
+        <header>
+            <h1>Ankh recruitment form</h1>
+        </header>
+        <div class="container">
+            <form multi-step-form action="https://docs.google.com/forms/d/e/1FAIpQLSfQfdW1Ic7XBaYcVtdCGHY0__oM7qWXhyyl0p2ItsR24--HqA/formResponse" method="post" target="confirm" onsubmit="submitted=true">
+                <div class="form first-form active" data-step>
+                    <!-- <h1>ankh recruitment form</h1> -->
+                    <div class="left-side">
+                        <!-- Name -->
+                        <label for="entry.1564482766">Name</label>
+                        <input type="text" name="entry.1564482766" placeholder="Full Name" >
+                        <!-- Email -->
+                        <label for="entry.148047699">E-mail</label>
+                        <input type="email" name="entry.148047699" placeholder="E-mail" >
+                        <!-- PhNum -->
+                        <label for="entry.934946805">Phone Number</label>
+                        <input type="text" name="entry.934946805" placeholder="01XXXXXXXXX" >
+                        <!-- Faculty -->
+                        <label for="entry.1765396015">Faculty & degree</label>
+                        <input type="text" name="entry.1765396015" placeholder="ex: Commerce 3rd degree" >
+                        <label for="entry.839727304">Address</label>
+                        <input type="text" name="entry.839727304"  placeholder="ex: Assiut">
+                    </div>
+                    <div class="right-side">
+                        <label for="entry.444996900">Why do you want to join us!</label>
+                        <input type="text" name="entry.444996900" title="q1">
+                        <label for="entry.116230188">Facebook profile link?</label>
+                        <input type="text" name="entry.116230188" title="fb">
+                        <label for="entry.1179863609">Are you currently in any student activities ? if yes mention them?</label>
+                        <input type="text" name="entry.1179863609" title="st-act">
+                        <label for="entry.1957492054"></label>
+
+                        <div class="selection">
+                            <select name="entry.1957492054" id="committee" title="committee">
+                                <option value="hr">Human Resources</option>
+                                <option value="operations">Operations</option>
+                                <option value="project">Project</option>
+                                <option value="presentation">Presentation</option>
+                                <option value="logistics">Logistics</option>
+                                <option value="design">Design</option>
+                                <option value="photography">Photography</option>
+                                <option value="content">Content</option>
+                                <option value="td">Training & Development</option>
+                                <option value="pr">Public Relations</option>
+                                <option value="marketing">Marketing</option>
+                                <option value="it">IT</option>
+                                </select>
+                                <button type="button" next-button>Next</button>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- ########################### SECOND STEP ################################# -->
+                <!-- ########################### HR STEP ################################# -->
+                <div class="hr-form form" data-step>
+                    <div class="left-side" >
+                        <label for="entry.430389981">What do you know about HR</label>
+                        <input type="text" name="entry.430389981" title="hr" >
+                        <label for="entry.1007679852">What is the difference between HRM & HRD</label>
+                        <input type="text" name="entry.1007679852" title="hr" >
+                        <label for="entry.1614792670">What is the HR Functions?</label>
+                        <input type="text" name="entry.1614792670" title="hr" >
+                    </div>
+                    <div class="right-side">
+                        <label for="entry.735537180">What is the skills in the HR member?</label>
+                        <input type="text" name="entry.735537180" title="hr" >
+                        <label for="entry.346481376">Mention the biggest challenges that faced modern HR?</label>
+                        <input type="text" name="entry.346481376" title="hr" >
+                        <label for="entry.36727831">Any comment?</label>
+                        <input type="text" name="entry.36727831" title="hr" >     
+                        <div class="selection">
+                            <button type="button" Pervious-button>Pervious</button>
+                            <button type="submit">Submit</button>    
+                        </div>                   
+                    </div>                    
+                </div>
+                <!-- ########################### OPEARATIONS STEP ################################# -->
+                <div class="operations-form form" data-step>
+                    <div class="left-side" >
+                        <label for="entry.1320597002">What is the operations & what is in your mind about it?</label>
+                        <input type="text" name="entry.1320597002" title="op" >
+                        <label for="entry.219260923">What is the departments of operations and it's job?</label>
+                        <input  type="text" name="entry.219260923" title="op" >
+                        <label for="entry.1795996486">What is the importance of operations members in the entity?</label>
+                        <input  type="text" name="entry.1795996486" title="op" >
+                    </div>
+                    <div class="right-side">
+                        <label for="entry.70216589">What is the difference between operation & organization ?</label>
+                        <input type="text" name="entry.70216589" title="op" >
+                        <label for="entry.900357707">From your point of view, can u arrange an event as a whole ?</label>
+                        <input type="text" name="entry.900357707" title="op" >
+                        <label for="entry.495699933">Any comment?</label>
+                        <input type="text" name="entry.495699933" title="op"> 
+                        <div class="selection">
+                            <button type="button" Pervious-button>Pervious</button>
+                            <button type="submit">Submit</button>    
+                        </div>                       
+                    </div>
+                    
+                </div>
+                <!-- ########################### PROJECT STEP ################################# -->
+                <div class="project-form form" data-step>
+                    <div class="left-side" >
+                        <!-- Name -->
+                        <label for="entry.538197448">What do you know about Project Committee</label>
+                        <input type="text" name="entry.538197448" title="pro" >
+                        <!-- Email -->
+                        <label for="entry.682236180">Do you Have any ideas that benefit us & explain it</label>
+                        <input  type="text" name="entry.682236180" title="pro" >
+                        <div class="selection">
+                            <button type="button" Pervious-button>Pervious</button>
+                            <button type="submit">Submit</button>    
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- ########################### PRESENTATION STEP ################################# -->
+                <div class="presentation-form form" data-step>
+                    <div class="left-side" >
+                        <!-- Name -->
+                        <label for="entry.1288343655">Do you have any previous experiences?</label>
+                        <input type="text" name="entry.1288343655" title="presentation" >
+                        <!-- Email -->
+                        <label for="entry.949949898">What do you know about soft skills?</label>
+                        <input  type="text" name="entry.949949898" title="presentation" >
+                        <label for="entry.1538888972">What was the last topic you spoke in front of an audience?</label>
+                        <input  type="text" name="entry.1538888972" title="presentation" >
+                    </div>
+                    <div class="right-side">
+                        
+                        <label for="entry.1155310966">How to get rid of your fear of the stage?</label>
+                        <input type="text" name="entry.1155310966" title="presentation" >
+                        
+                        <label for="entry.1668005445">How do you handle supply emergencies? </label>
+                        <input type="text" name="entry.1668005445" title="presentation" >
+                        <label for="entry.836603181">Any comment?</label>
+                        <input type="text" name="entry.836603181" title="presentation" >
+                        <div class="selection">
+                            <button type="button" Pervious-button>Pervious</button>
+                            <button type="submit">Submit</button>    
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- ########################### LOGISTICS STEP ################################# -->
+                <div class="logistics-form form" data-step>
+                    <div class="left-side" >
+                        <label for="entry.35500212">What is the difference between logistics and coordination?</label>
+                        <input type="text" name="entry.35500212" title="logistics" >
+                        <label for="entry.959007242">What is the concept of time management from your point ?of view? and scope of its significance?</label>
+                        <input  type="text" name="entry.959007242" title="logistics" >
+                    </div>
+                    <div class="right-side">
+                        <!-- PhNum -->
+                        <label for="entry.1357479918">What are the main factors for managing an event?</label>
+                        <input type="text" name="entry.1357479918" title="logistics" >
+                        <!-- Faculty -->
+                        <label for="entry.1978909733">Briefly explain the steps to implement a recruitment campaign (from the POV. of logistics)</label>
+                        <input type="text" name="entry.1978909733" title="logistics" >
+                        <div class="selection">
+                            <button type="button" Pervious-button>Pervious</button>
+                            <button type="submit">Submit</button>    
+                        </div>
+                    </div>
+                            
+                </div>
+                <!-- ########################### DESIGN STEP ################################# -->
+                <div class="design-form form" data-step>
+                    <div class="left-side" >
+                        <label for="entry.633227846">What is structure of design?</label>
+                        <input type="text" name="entry.633227846" title="design" >
+                        <label for="entry.1875584479">Upload Fetra design with your name to your drive and drop the link here</label>
+                        <input  type="text" name="entry.1875584479" title="design" >
+                    </div>
+                    <div class="right-side">
+                        <input type="checkbox" name="entry.355175538" id="Photoshop" title="design">
+                        <label for="Photoshop">Photoshop</label>
+
+                        <input type="checkbox" name="entry.355175538" id="Canva" title="design">
+                        <label for="Canva">Canva</label>
+
+                        <input type="checkbox" name="entry.355175538" id="Illustrator" title="design">
+                        <label for="Illustrator">Illustrator</label>
+
+                        <input type="checkbox" name="entry.355175538" id="indesign" title="design">
+                        <label for="indesign">InDesign</label>
+
+                        <input type="checkbox" name="entry.355175538" id="ae" title="design">
+                        <label for="ae">After effect</label>
+
+                        <input type="checkbox" name="entry.355175538" id="other" title="design">
+                        <label for="other">Other</label>
+
+                        <label for="entry.1832929203">Any comment?</label>
+                        <input type="text" name="entry.1832929203" title="design" >
+                        <div class="selection">
+                            <button type="button" Pervious-button>Pervious</button>
+                            <button type="submit">Submit</button>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- ########################### PHOTO STEP ################################# -->
+                <div class="photography-form form" data-step>
+                    <div class="left-side" >
+                        
+                        <label for="entry.787472609">What's the shutter</label>
+                        <input type="text" name="entry.787472609" title="photo" >
+                        <!-- Email -->
+                        <label for="entry.790368187">What's the mask and how to make a mask?</label>
+                        <input  type="text" name="entry.790368187" title="photo" >
+                    </div>
+                    <div class="right-side">
+                        <!-- PhNum -->
+                        <label for="entry.377065254">What's the difference between premier & After Effect</label>
+                        <input type="text" name="entry.377065254" title="photo" >
+                        <!-- Faculty -->
+                        <label for="entry.550925257">Any comment?</label>
+                        <input type="text" name="entry.550925257" title="photo" >
+                        <div class="selection">
+                            <button type="button" Pervious-button>Pervious</button>
+                            <button type="submit">Submit</button>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- ########################### CONTENT STEP ################################# -->
+                <div class="content-form form" data-step>
+                    <div class="left-side" >
+                        
+                        <label for="entry.1876907827">What do you know about content concept?</label>
+                        <input type="text" name="entry.1876907827" title="content" >
+                        <!-- Email -->
+                        <label for="entry.2132598936">What's difference between copy writing and content writing?</label>
+                        <input  type="text" name="entry.2132598936" title="content" >
+
+                        <label for="entry.1606448910">What's CTA</label>
+                        <input  type="text" name="entry.1606448910" title="content" >
+                    </div>
+                    <div class="right-side">
+
+                        <label for="entry.1812196129">What are the components of content?</label>
+                        <input type="text" name="entry.1812196129" title="photo" >
+
+                        <label for="entry.832461046">How to determine the target audience?</label>
+                        <input type="text" name="entry.832461046" title="photo" >
+
+                        <label for="entry.545079639">Any comment?</label>
+                        <input type="text" name="entry.545079639" title="photo" >
+                        <div class="selection">
+                            <button type="button" Pervious-button>Pervious</button>
+                            <button type="submit">Submit</button>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- ########################### TD STEP ################################# -->
+                <div class="td-form form" data-step>
+                    <div class="left-side" >
+                        
+                        <label for="entry.1961354286">Introduce yourself!</label>
+                        <input type="text" name="entry.1961354286" title="td" >
+                        <!-- Email -->
+                        <label for="entry.627557308">Why would you like to be a coach</label>
+                        <input  type="text" name="entry.627557308" title="td" >
+
+                        <label for="entry.87397703">What are the characteristics of a successful coach?</label>
+                        <input  type="text" name="entry.87397703" title="td" >
+                    </div>
+                    <div class="right-side">
+                        <!-- PhNum -->
+                        <label for="entry.151715930">What distinguishes you from others in training?</label>
+                        <input type="text" name="entry.151715930" title="td" >
+                        <!-- Faculty -->
+                        <label for="entry.1005612055">How much time do you take to prepare scientific material and present it?</label>
+                        <input type="text" name="entry.1005612055" title="td" >
+
+                        <label for="entry.1701009167">Any Comment?</label>
+                        <input type="text" name="entry.1701009167" title="td" >
+                        <div class="selection">
+                            <button type="button" Pervious-button>Pervious</button>
+                            <button type="submit">Submit</button>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- ########################### PR STEP ################################# -->
+                <div class="pr-form form" data-step>
+                    <div class="left-side" >
+                        <label for="entry.557975015">What's pr and what's the proposal</label>
+                        <input type="text" name="entry.557975015" title="pr" >
+                        <!-- Email -->
+                        <label for="entry.1174550899">What's the difference between Public Relations & Marketing</label>
+                        <input  type="text" name="entry.1174550899" title="pr" >
+
+                        <label for="entry.1685196153">What's difference between Proposal & package</label>
+                        <input  type="text" name="entry.1685196153" title="pr" >
+                    </div>
+                    <div class="right-side">
+                        <!-- PhNum -->
+                        <label for="entry.1002426003">What's difference between PR,FR</label>
+                        <input type="text" name="entry.1002426003" title="pr" >
+                        <!-- Faculty -->
+                        <label for="entry.201221121">What's the partnership, Sponsorship</label>
+                        <input type="text" name="entry.201221121" title="pr" >
+
+                        <label for="entry.1476317392">Any Comment?</label>
+                        <input type="text" name="entry.1476317392" title="pr" >
+                        <div class="selection">
+                            <button type="button" Pervious-button>Pervious</button>
+                            <button type="submit">Submit</button>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- ########################### MR STEP ################################# -->
+                <div class="marketing-form form" data-step>
+                    <div class="left-side" >
+                        
+                        <label for="entry.410377458">What is Marketing?</label>
+                        <input type="text" name="entry.410377458" title="marketing" >
+                        <!-- Email -->
+                        <label for="entry.1053547739">What's difference between Public Relations & Marketing?</label>
+                        <input  type="text" name="entry.1053547739" title="marketing" >
+<!-- ######################################### ERROR QUESTION ############################################################ -->
+                        <label for="entry.439370386">What is the difference between Marketing and Public relationships?</label> 
+                        <input  type="text" name="entry.439370386" title="marketing" >
+                    </div>
+                    <div class="right-side">
+                        <!-- PhNum -->
+                        <label for="entry.2034656806">What is the the types of Marketing?</label>
+                        <input type="text" name="entry.2034656806" title="marketing" >
+                        <!-- Faculty -->
+                        <label for="entry.260135363">What is the relation between Marketing and Media?</label>
+                        <input type="text" name="entry.260135363" title="marketing" >
+
+                        <label for="entry.1627829893">Any Comment?</label>
+                        <input type="text" name="entry.1627829893" title="marketing" >
+                        <div class="selection">
+                            <button type="button" Pervious-button>Pervious</button>
+                            <button type="submit">Submit</button>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <!-- ########################### IT STEP ################################# -->
+                <div class="it-form form" data-step>
+                    <div class="left-side" >
+                        
+                        <label for="entry.1168376563">What what is your background in IT?</label>
+                        <input type="text" name="entry.1168376563" title="it" >
+                        
+                        <label for="entry.766888888">What programming languages do you know?</label>
+                        <input  type="text" name="entry.766888888" title="it" >
+
+                        <label for="entry.460825259">What is object-oriented programming?</label>
+                        <input  type="text" name="entry.460825259" title="it" >
+                    </div>
+                    <div class="right-side">
+                        
+                        <label for="entry.844521702">What do you know about responsive design</label>
+                        <input type="text" name="entry.844521702" title="it" >
+                        
+                        <label for="entry.806573803">If you have GitHub account drop the link here</label>
+                        <input type="text" name="entry.806573803" title="it" >
+
+                        <label for="entry.100644227">Any Comment?</label>
+                        <input type="text" name="entry.100644227" title="it" >
+                        <div class="selection">
+                            <button type="button" Pervious-button>Pervious</button>
+                            <button type="submit">Submit</button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </form>                    <!-- <textarea name="" id="" cols="30" rows="10"></textarea> -->
+            <!-- ##################### تصميم ديزين فطرة عليه اسمك ابلود فيل ################### What's Apps do you use in design
+-->
+            <!-- Max width for field of form-->
+            <!-- <footer>
+                <h6>&copy;All Copyright Reserved to Abdallah AL-Refaey</h6>
+            </footer>
+        </div> -->
+        
+        <script src="script.js"></script>
+    </body>
+</html>
