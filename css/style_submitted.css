@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --mainColor: #f7b916;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #dbdbdb;
+    border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: var(--mainColor,#f7b916);
+    border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background: #5f4503; 
+}
+
+
+body {
+    max-height: 100vh;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background: url("../imgs/background.png");
+    background-size: auto;
+    text-transform: capitalize;
+    -webkit-filter: grayscale(10);
+    filter: grayscale(10);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+/* @media (min-width: 576px) {
+    .container {
+        width: 720px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        width: 1320px;
+    }
+} */
+
+.thanks {
+    width: 500px;
+    height: 200px;
+    margin-top: 20px auto;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    animation: message .2s linear .3s forwards;
+}
+
+.text {
+    transform: translateY(50%)
+}
+
+/* .thanks h1::after {
+    content: " ";
+    width: 100px;
+    height: 100px;
+    background-color: var(--mainColor);
+    border-radius: 50%
+} */
+
+h1 {
+    color: #f7b916;
+    /* animation: text .2s linear .5s forwards; */
+}
+
+p {
+    font-size: 1.5em;
+    animation: text .2s linear .7s forwards;
+}
+
+/* .thanks, h1, p {
+    opacity: 0;
+} */
+
+
+@keyframes message {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes text {
+    form {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 576px) {
+    .thanks {
+        width: 80%;
+    }
+
+    .text h1 {
+        font-size: 1.5em;
+    }
+}

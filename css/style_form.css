@@ -1,0 +1,246 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --mainColor: #f7b916;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #dbdbdb;
+    border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: var(--mainColor,#f7b916);
+    border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background: #5f4503; 
+}
+
+
+body {
+    max-height: 100vh;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background: url("../imgs/background.png");
+    background-size: auto;
+    text-transform: capitalize;
+    /* -webkit-filter: grayscale(10);
+    filter: grayscale(10); */
+}
+
+.container {
+    margin: auto;
+}
+
+@media (min-width: 576px) {
+    .container {
+        width: 720px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        width: 1320px;
+    }
+}
+
+/* h1::selection {
+    background-color: #ffc3004a;
+} */
+
+/* .overlay {
+    background-color: #000;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+} */
+
+/* h1::before {
+    content:"";
+    width: 50%;
+    height: 5px;
+    background-color: yellow;
+} */
+
+form {
+    margin: 10%;
+    box-shadow: 0 0 37px 9px #dbd5d569;
+    background-color: #faf6f6a6;
+    padding: 20px 10px;
+    border-radius: 20px;
+    gap: 10px;
+    align-items: flex-start;
+    padding: 50px
+    /* -webkit-filter: blur(50px);
+    filter: blur(50px); */;
+}
+
+h1 {
+    margin: 20px;
+    color: #dbdbdb;
+}
+
+.form, iframe {
+    display: none;
+    transition : display 1s;
+}
+
+.active {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.selection {
+    margin-top: 10px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    column-gap: 10px;
+    
+}
+
+/* .left-side, .right-side {
+    width: 50%;
+} */
+
+label, button, .design-form .right-side label:last-of-type{
+    display: flex;
+    width: 80%;
+    margin: 5px 0;
+}
+
+button {
+    justify-content: center;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: var(--mainColor,#f7b916);
+    padding: 5px 10px;
+    border: none;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 6px;
+    width: 175px;
+    transition: background-color .3s;
+}
+
+button:hover {
+    background-color: #f1c97e;
+}
+
+input {
+    padding: 10px;
+    width: 80%;
+    min-width: 190px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    caret-color: var(--mainColor, #f7b916);
+    transition: all 0.5s;
+}
+
+select {
+    border: 1px solid var(--mainColor, #f7b916);
+    padding: 10px 0;
+    font-weight: 500;
+    border-radius: 5px;
+    text-align: center;
+    transition: all 0.5s;
+
+}
+
+input:focus, input:hover, select:focus {
+    outline: none;
+    background-color: #f5e9cd;
+}
+
+input:focus {
+    border: 1.2px solid #3c3c3c;
+}
+
+option:checked {
+    font-weight: 500;
+    background-color: var(--mainColor, #f7b916);
+}
+
+.right-side, .left-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.design-form .right-side label {
+    display: inline;
+}
+
+.design-form .right-side label:last-of-type {
+    margin-top: 20px;
+}
+.design-form [type="checkbox"] {
+    width: auto;
+}
+
+
+h1,footer h6 {
+    text-align: center;
+}
+
+.chekbox:checked + label{
+    font-weight: 600;
+    font-style: italic;
+    color: #555;
+}
+
+
+/* label, input[type="checkbox"] {
+    cursor: pointer;
+} */
+
+footer h6 {
+    /* position: absolute;
+    bottom: 0;
+    left: calc(50% - (256.84px /2)); */
+    font-weight: 400;
+    margin-top: 20px;
+    color: var(--mainColor)
+}
