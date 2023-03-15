@@ -47,11 +47,11 @@ body {
     margin: auto;
 }
 
-@media (min-width: 576px) {
+/* @media (min-width: 576px) {
     .container {
         width: 720px;
     }
-}
+} */
 
 @media (min-width: 768px) {
     .container {
@@ -109,10 +109,31 @@ form {
     filter: blur(50px); */;
 }
 
-h1 {
+h1, span {
     margin: 20px;
     color: #dbdbdb;
 }
+
+header {
+    text-align: center;
+}
+
+span {
+    animation: flashed 3s linear infinite;
+}
+
+@keyframes flashed {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
 
 .form, iframe {
     display: none;
@@ -191,7 +212,7 @@ select {
 
 input:focus, input:hover, select:focus {
     outline: none;
-    background-color: #f5e9cd;
+    background-color: transparent;
 }
 
 input:focus {
@@ -243,4 +264,42 @@ footer h6 {
     font-weight: 400;
     margin-top: 20px;
     color: var(--mainColor)
+}
+
+@media (max-width: 372px) {
+    form {
+    margin: 0;
+    border-radius: 10px;
+    padding: 20px
+    /* -webkit-filter: blur(50px);
+    filter: blur(50px); */;
+        
+        
+    }
+}
+
+@media (min-width: 373px) and (max-width: 511px) {
+    form {
+        margin: 5%;
+        border-radius: 20px;
+        padding: 30px
+        /* -webkit-filter: blur(50px);
+        filter: blur(50px); */;
+    }
+}
+
+@media (max-width: 630px) {
+    .right-side {
+        margin-top: 20px;
+    }
+    .design-form [type="checkbox"] {
+        min-width: 20px;
+        width: 5px;
+    }
+
+
+}
+
+.design-form .right-side label {
+    width: auto;
 }

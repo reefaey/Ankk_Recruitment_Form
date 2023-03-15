@@ -30,7 +30,7 @@
 }
 
 
-body {
+.container {
     max-height: 100vh;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -39,8 +39,8 @@ body {
     background: url("../imgs/background.png");
     background-size: auto;
     text-transform: capitalize;
-    -webkit-filter: grayscale(10);
-    filter: grayscale(10);
+    /* -webkit-filter: grayscale(10);
+    filter: grayscale(10); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -84,26 +84,22 @@ body {
     margin-top: 20px auto;
     background-color: #fff;
     border-radius: 20px;
-    padding: 20px;
     text-align: center;
     animation: message .2s linear .3s forwards;
 }
 
-.text {
-    transform: translateY(50%)
-}
-
-/* .thanks h1::after {
+.thanks h1::after {
     content: " ";
     width: 100px;
     height: 100px;
     background-color: var(--mainColor);
     border-radius: 50%
-} */
+}
 
 h1 {
-    color: #f7b916;
-    /* animation: text .2s linear .5s forwards; */
+    color: var(--mainColor);
+    animation: text .2s linear .5s forwards;
+    top: -10px;
 }
 
 p {
@@ -111,10 +107,22 @@ p {
     animation: text .2s linear .7s forwards;
 }
 
-/* .thanks, h1, p {
-    opacity: 0;
-} */
+img {
+    /* position: absolute; */
+    width: 75px;
+    top: -35px;
+    z-index: 5;
+    animation: verify .2s linear .5s forwards;
+}
 
+.thanks, h1, p, img{
+    opacity: 0;
+    position: relative;
+}
+
+.text {
+    transform: translateY(-12px);
+}
 
 @keyframes message {
     0% {
@@ -138,12 +146,40 @@ p {
     }
 }
 
+@keyframes verify {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.5);
+    } 
+    100% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+}
+
 @media (max-width: 576px) {
     .thanks {
         width: 80%;
     }
 
+    .text{
+        padding: 0 30px;
+        transform: translateY(2px);
+    }
+
     .text h1 {
-        font-size: 1.5em;
+        font-size: 1.7em;
+    }
+
+    .text p {
+        font-size: 1.2em;
+    }
+
+    img {
+        width: 60px;
+        top: -27px;
     }
 }
